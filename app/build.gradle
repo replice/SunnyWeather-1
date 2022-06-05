@@ -20,9 +20,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
+    implementation 'me.relex:circleindicator:2.1.6'
+    implementation 'com.airbnb.android:lottie:5.1.1'
+    implementation 'com.qmuiteam:qmui:2.0.0-alpha10'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0'
